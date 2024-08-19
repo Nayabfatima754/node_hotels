@@ -26,7 +26,7 @@ router.post('/', async (req, res) => { // Fixed route path
     }
   });
 
-  router.get('/:taste', async(req,res)=>{ 
+  router.get('/:taste', async(req,res)=>{   
     const taste_type = req.params.taste;
     try{
         if(taste_type=='spicy'|| taste_type=='sweet'|| taste_type=='sour'){
